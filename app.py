@@ -15,7 +15,7 @@ with app.app_context():
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
-app.register_blueprint(mission_bp, url_prefix='/mission')
+app.register_blueprint(mission_bp, url_prefix='/api/mission')
 
 if __name__ == '__main__':
     app.run()

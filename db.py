@@ -19,4 +19,5 @@ def get_db_connection():
 
 def release_db_connection(conn):
     connection_pool.putconn(conn)
+
 db = SQLAlchemy()
