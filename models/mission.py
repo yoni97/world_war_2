@@ -2,10 +2,9 @@
 from sqlalchemy import Column, Integer, ForeignKey, String
 from sqlalchemy.orm import relationship
 
-from config.base import Base
 
 
-class targets(Base):
+class targets():
     __tablename__ = 'targets'
     target_id = Column(Integer, primary_key=True, autoincrement=True)
     target_industry = Column(String(255), nullable=False)

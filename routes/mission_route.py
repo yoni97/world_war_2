@@ -3,12 +3,8 @@ from flask import Blueprint, jsonify, request
 mission_bp = Blueprint('users', __name__)
 
 
-@mission_bp.route('/')
-
-
 from returns.result import Success, Failure
-from repository.mission_repository import get_all_missions, get_mission_by_id
-
+from services.from_db import get_all_missions, get_mission_by_id
 
 mission_blueprint = Blueprint('/', __name__)
 
