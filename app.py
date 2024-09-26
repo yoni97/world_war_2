@@ -1,7 +1,6 @@
 from flask import Flask
 from db import db
 from routes.mission_route import mission_bp
-from psycopg2
 
 app = Flask(__name__)
 
