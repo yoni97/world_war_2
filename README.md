@@ -1,22 +1,103 @@
-![image](https://github.com/user-attachments/assets/7ebf08b4-0e03-46dd-98fa-fff928e2cfab)
+Sure! Here’s the README file in English for your data normalization project:
 
-![image](https://github.com/user-attachments/assets/e83a5ba5-8f86-491b-9d54-24674309d4eb)
+---
 
-![image](https://github.com/user-attachments/assets/2b945734-64e8-4caf-b3ff-2f7103f75572)
+# Data Normalization Project
 
-![image](https://github.com/user-attachments/assets/284841ea-d99b-4360-8068-bdc15a785a55)
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Goals](#project-goals)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [API](#api)
+- [Data Indexing](#data-indexing)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-![image](https://github.com/user-attachments/assets/d8c72fe0-8a9a-495f-8b97-75c65721b33b)
+## Introduction
+This project aims to normalize data from various sources and create new tables, making it easier to manage and work with the data. Additionally, the project includes an API that allows for requests on the unnormalized data, along with an indexing system to enhance search efficiency.
 
-![image](https://github.com/user-attachments/assets/b021c8b1-d648-4e5c-a456-a4697b60ac0a)
+## Project Goals
+- **Data Normalization**: Transform unnormalized data into a normalized format to improve efficiency.
+- **Create New Tables**: Convert data from different sources into tables that are easy to understand and work with.
+- **API**: Provide access to unnormalized data via an API, simplifying data usage.
+- **Indexing**: Enhance search performance through data indexing.
 
-![image](https://github.com/user-attachments/assets/1133d8a0-2a63-49b9-aa97-b7dc69dfa7e4)
+## Architecture
+The project is built from several components:
+- **Normalization Module**: Responsible for normalizing the data.
+- **API Module**: Provides a RESTful interface for requests on the data.
+- **Indexing Module**: Manages data indexing for fast searching.
 
-![image](https://github.com/user-attachments/assets/921ffc45-ed5d-4f9c-9c63-266a456071e7)
+## Installation
+1. **Prerequisites**:
+   - Python 3.7+
+   - pip
+   - A database (such as PostgreSQL or MySQL)
 
-![image](https://github.com/user-attachments/assets/8870cc12-2eac-4568-8b59-0f6be50db16a)
+2. **Installation**:
+   ```bash
+   git clone https://github.com/username/data-normalization-project.git
+   cd data-normalization-project
+   pip install -r requirements.txt
+   ```
 
-![image](https://github.com/user-attachments/assets/5d792249-f01d-4f5a-ae4f-100f06836230)
+3. **Database Setup**:
+   - Create a database and configure the settings in the `.env` file.
 
-![image](https://github.com/user-attachments/assets/f40263d9-1d34-413c-9be3-c3dfe97d1f2a)
+## Usage
+
+### API
+After installing the project, you can start the server:
+```bash
+python app.py
+```
+The API is available at `http://localhost:5000`.
+
+#### Example Requests:
+- **Get Unnormalized Data**:
+  ```http
+  GET /api/unnormalized-data
+  ```
+
+- **Get Normalized Data**:
+  ```http
+  GET /api/normalized-data
+  ```
+
+- **Add a New Record**:
+  ```http
+  POST /api/data
+  Content-Type: application/json
+
+  {
+    "field1": "value1",
+    "field2": "value2"
+  }
+  ```
+
+## Data Indexing
+The project includes an indexing system that allows for fast searching of data. To index the data, simply run the command:
+```bash
+python index_data.py
+```
+Now, you can search the data using the search API:
+```http
+GET /api/search?query=<your_query>
+```
+
+## Contributing
+If you would like to contribute to the project, feel free to submit pull requests or open issues in the project repository.
+
+## Contact
+For questions, suggestions, or issues, please contact [your_email@example.com].
+
+---
+
+### Notes
+- Be sure to replace `username`, `your_email@example.com`, and any other details as needed.
+- You can also add code snippets, explanations of the fields in the data, and even videos or images to make the README more engaging!
+
+If you have any further questions or would like to make adjustments, I'm here to help!
 
