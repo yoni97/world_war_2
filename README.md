@@ -68,7 +68,7 @@ The API is available at `http://localhost:5000`.
 
 - **Add a New Record**:
   ```http
-  POST /api/data
+  GET /api/mission
   Content-Type: application/json
 
   {
@@ -84,19 +84,19 @@ python index_data.py
 ```
 Now, you can search the data using the search API:
 ```http
-GET /api/search?query=<your_query>
+GET /api/mission/<your_query>
 ```
 
 ## Contributing
 If you would like to contribute to the project, feel free to submit pull requests or open issues in the project repository.
 
 ## Contact
-For questions, suggestions, or issues, please contact [your_email@example.com].
+For questions, suggestions, or issues, please contact [yonie3921@gmail.com].
 
 ---
 
 ### Notes
-- Be sure to replace `username`, `your_email@example.com`, and any other details as needed.
+- Be sure to replace `username`, `yonie3921@gmail.com`, and any other details as needed.
 - You can also add code snippets, explanations of the fields in the data, and even videos or images to make the README more engaging!
 
 If you have any further questions or would like to make adjustments, I'm here to help!
